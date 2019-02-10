@@ -6,15 +6,13 @@
 - phpunit is development tool for your project
 - after installing phpunit you must set configuration by phpunit.xml
 # phpunit directory mapping
+```
 /test
-
   FirstTest.php
-	
 /vendor
-
   /bin
-	
     phpunit
 phpunit.xml
+```
 # run phpunit for this project
 <code>vendor/bin/phpunit</code>
