@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<phpunit 
+	bootstrap="./vendor/autoload.php" 
+	colors="true" 
+	verbose="true" 
+	stopOnFailure="true"
+	>
+
+    <testsuites>
+        <testsuite name="phpunit - example">
+            <directory>./tests</directory>
+			<file>./tests/Example.php</file>
+        </testsuite>
+		<testsuite name="annotation - DataProvider">
+			<directory>./tests/Annotation</directory>
+			<file>./test/Annotation/DataProvider.php</file>
+		</testsuite>
+		<testsuite name="annotation - Extends">
+			<directory>./tests/Annotation</directory>
+			<file>./test/Annotation/Extends.php</file>
+		</testsuite>
+		<testsuite name="Fixtures - SetUp">
+			<directory>./tests/Fixtures</directory>
+			<file>./test/Annotation/SetUp.php</file>
+		</testsuite>
+		<testsuite name="Fixtures - SetUpClass">
+			<directory  suffix=".php">./tests/Fixtures</directory>
+			<file>./test/Annotation/SetUpClass.php</file>
+		</testsuite>
+    </testsuites>
+
+</phpunit>
