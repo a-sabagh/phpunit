@@ -7,9 +7,13 @@
 - after installing phpunit you must set configuration by phpunit.xml
 # phpunit directory mapping
 /test
+
   FirstTest.php
+	
 /vendor
+
   /bin
+	
     phpunit
 phpunit.xml
 # run phpunit for this project
